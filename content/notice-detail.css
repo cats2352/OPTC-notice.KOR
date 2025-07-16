@@ -1,0 +1,386 @@
+/* 기본 스타일 초기화 및 Pretendard 폰트 적용 */
+:root {
+    /* 라이트 모드 (기본) 색상 */
+    --bg-color: #f8f9fa;
+    --container-bg: #ffffff;
+    --text-color: #212529;
+    --border-color: #dee2e6;
+    --hover-bg: #e9ecef;
+    --link-color: #007bff;
+    --link-hover: #0056b3;
+    --meta-color: #6c757d;
+    --header-border: #343a40;
+    --blockquote-bg: #f8f9fa;
+    --code-bg: #f1f3f4;
+}
+
+/* 다크 모드 색상 */
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --container-bg: #2d2d2d;
+    --text-color: #e9ecef;
+    --border-color: #444444;
+    --hover-bg: #3d3d3d;
+    --link-color: #79b8ff;
+    --link-hover: #9ecbff;
+    --meta-color: #adb5bd;
+    --header-border: #666666;
+    --blockquote-bg: #363636;
+    --code-bg: #363636;
+}
+
+body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* 다크모드 토글 버튼 스타일 */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.dark-mode-toggle button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--container-bg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.dark-mode-toggle button:hover {
+    transform: scale(1.1);
+}
+
+/* 라이트/다크 모드 아이콘 표시 설정 */
+[data-theme="dark"] .light-mode,
+[data-theme="light"] .dark-mode {
+    display: none;
+}
+
+/* 전체 레이아웃을 중앙에 위치시키는 컨테이너 */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: var(--container-bg);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 뒤로가기 버튼 스타일 */
+.back-button {
+    margin-bottom: 30px;
+}
+
+.back-button button {
+    background: none;
+    border: none;
+    color: var(--link-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: color 0.2s;
+    font-family: 'Pretendard', sans-serif;
+}
+
+.back-button button:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* 공지사항 상세 내용 컨테이너 */
+.notice-detail {
+    border-top: 2px solid var(--border-color);
+    padding-top: 30px;
+}
+
+/* 제목 영역 스타일 */
+.notice-header {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.notice-header h1 {
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    line-height: 1.3;
+}
+
+.notice-meta {
+    display: flex;
+    gap: 20px;
+    color: var(--meta-color);
+    font-size: 0.95rem;
+}
+
+.notice-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.notice-meta .author::before {
+    content: "👤";
+    margin-right: 5px;
+}
+
+.notice-meta .date::before {
+    content: "📅";
+    margin-right: 5px;
+}
+
+/* 내용 영역 스타일 */
+.notice-content {
+    margin-bottom: 40px;
+    min-height: 300px;
+}
+
+.notice-content div {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+/* 내용 내부 요소들 스타일 */
+.notice-content h2 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 30px 0 15px 0;
+    border-left: 4px solid var(--link-color);
+    padding-left: 15px;
+}
+
+.notice-content h3 {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 25px 0 12px 0;
+}
+
+.notice-content p {
+    margin: 15px 0;
+    color: var(--text-color);
+}
+
+.notice-content ul, .notice-content ol {
+    margin: 15px 0;
+    padding-left: 25px;
+    color: var(--text-color);
+}
+
+.notice-content li {
+    margin: 8px 0;
+}
+
+.notice-content strong {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.notice-content em {
+    color: var(--meta-color);
+    font-style: italic;
+}
+
+.notice-content blockquote {
+    background-color: var(--blockquote-bg);
+    border-left: 4px solid var(--link-color);
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.notice-content code {
+    background-color: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: var(--text-color);
+}
+
+/* 하단 버튼 영역 */
+.notice-footer {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+}
+
+.notice-footer button {
+    background-color: var(--link-color);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: 'Pretendard', sans-serif;
+}
+
+.notice-footer button:hover {
+    background-color: var(--link-hover);
+}
+
+/* 로딩 상태 스타일 */
+.loading {
+    text-align: center;
+    padding: 50px 0;
+    color: var(--meta-color);
+}
+
+.loading::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    border-top-color: var(--link-color);
+    animation: spin 1s ease-in-out infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .container {
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    .notice-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .notice-meta {
+        flex-direction: column;
+        gap: 8px;
+        font-size: 0.9rem;
+    }
+
+    .notice-content div {
+        font-size: 0.95rem;
+    }
+
+    /* 다크모드 토글 버튼 모바일 최적화 */
+    .dark-mode-toggle {
+        top: 10px;
+        right: 10px;
+    }
+
+    .dark-mode-toggle button {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+/* 425px 이하 모바일 최적화 */
+@media (max-width: 425px) {
+    .container {
+        margin: 10px auto;
+        padding: 12px;
+    }
+
+    .notice-header h1 {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+
+    .notice-meta {
+        flex-direction: column;
+        gap: 8px;
+        font-size: 0.85rem;
+    }
+
+    .notice-content div {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .notice-content h2 {
+        font-size: 1.3rem;
+        margin: 22px 0 12px 0;
+        padding-left: 12px;
+    }
+
+    .notice-content h3 {
+        font-size: 1.2rem;
+        margin: 20px 0 10px 0;
+    }
+
+    .notice-content p {
+        margin: 12px 0;
+    }
+
+    .notice-content ul, 
+    .notice-content ol {
+        margin: 12px 0;
+        padding-left: 22px;
+    }
+
+    .notice-content li {
+        margin: 8px 0;
+    }
+
+    .notice-content blockquote {
+        padding: 12px 18px;
+        margin: 18px 0;
+        font-size: 0.9rem;
+    }
+
+    .notice-content code {
+        font-size: 0.85em;
+        padding: 2px 5px;
+    }
+
+    /* 뒤로가기 버튼 425px 최적화 */
+    .back-button button {
+        font-size: 0.95rem;
+        padding: 10px 0;
+    }
+
+    /* 하단 버튼 425px 최적화 */
+    .notice-footer button {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+
+    /* 다크모드 토글 버튼 425px 최적화 */
+    .dark-mode-toggle {
+        top: 10px;
+        right: 10px;
+    }
+
+    .dark-mode-toggle button {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        padding: 8px;
+    }
+} 
