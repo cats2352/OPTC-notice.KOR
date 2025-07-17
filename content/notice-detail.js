@@ -126,6 +126,23 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>감사합니다. </p>
                 `
             },
+
+            'security-patch': {
+                title: '[기능추가]바로가기버튼 추가 및 태그기능추가',
+                author: '고양이',
+                date: '2025-07-17',
+                content: `
+                    <p>메인 화면에 캐릭터DB 바로가기 버튼이 추가되었습니다.</p>
+                    <p>기존에 사라진 태그기능이 다시 추가되었습니다.</p>
+                    <P>신규캐릭터의 하단 태그가 보이지 않는 오류를 수정하였습니다.</P>
+
+                    <blockquote>
+                        <p><strong>안내:</strong> 패치 적용으로 인한 서비스 중단은 없었으며, 모든 기능이 정상적으로 작동합니다.</p>
+                    </blockquote>
+
+                    <p>감사합니다. </p>
+                `
+            },
         };
 
         return noticeData[noticeId] || null;
