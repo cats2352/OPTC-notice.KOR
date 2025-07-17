@@ -235,9 +235,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         } else if (title.includes('신규 캐릭터 추가완료')) {
                             noticeId = 'security-patch';
                         }  else if (title.includes('뉴비들이 자주물어보는 질문 사이트 런칭')) {
-                            noticeId = 'security-patch';
+                            noticeId = 'security-patch2';
                         }   else if (title.includes('[기능추가]바로가기버튼 추가 및 태그기능추가')) {
-                            noticeId = 'security-patch';
+                            noticeId = 'security-patch3';
                         }
                         else {
                             // 기본 공지사항 (내용이 없는 경우)

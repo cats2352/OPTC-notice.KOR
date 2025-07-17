@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>감사합니다.</p>
                 `
             },
-            'security-patch': {
+            'security-patch2': {
                 title: '뉴비들이 자주물어보는 질문 사이트 런칭',
                 author: '고양이',
                 date: '2025-07-16',
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 `
             },
 
-            'security-patch': {
+            'security-patch3': {
                 title: '[기능추가]바로가기버튼 추가 및 태그기능추가',
                 author: '고양이',
                 date: '2025-07-17',
