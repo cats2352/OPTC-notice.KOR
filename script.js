@@ -238,6 +238,8 @@ document.addEventListener('DOMContentLoaded', function() {
                             noticeId = 'security-patch2';
                         }   else if (title.includes('[기능추가]바로가기버튼 추가 및 태그기능추가')) {
                             noticeId = 'security-patch3';
+                        }   else if (title.includes('[업데이트 예정]7/19일 신규캐릭터추가')) {
+                            noticeId = 'security-patch4';
                         }
                         else {
                             // 기본 공지사항 (내용이 없는 경우)

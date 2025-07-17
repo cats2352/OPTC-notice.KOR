@@ -143,6 +143,31 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>감사합니다. </p>
                 `
             },
+
+            'security-patch4': {
+                title: '[업데이트 예정]7/19일 신규캐릭터추가',
+                author: '고양이',
+                date: '2025-07-17',
+                content: `
+                    <p>해당 업데이트가 완료되면 제목이 [업데이트 완료]라고 변경됩니다.</p>
+                    <p>7월19일 유대/서포트패스 신규캐릭터가 추가될 예정입니다.</p>
+                    <P>추가 캐릭터 목록은 아래와 같습니다.</P>
+
+                    <h1>신규 캐릭터 목록</h1>
+                    <ul>
+                        <li>Mr.0&미스 올 선데이 - 사막에 퍼지는 불온한 그림자</li>
+                        <li>돈키호테 도플라밍고 - 새로운 칠무해를 향한 미소</li>
+                        <li>알비다&코비</li>
+                        <li>미호크&페로나 - 인연이 맺어 준 특이한 관계</li>
+                    </ul>
+
+                    <blockquote>
+                        <p><strong>안내:</strong> 패치 적용으로 인한 서비스 중단은 없었으며, 모든 기능이 정상적으로 작동합니다.</p>
+                    </blockquote>
+
+                    <p>감사합니다. </p>
+                `
+            },
         };
 
         return noticeData[noticeId] || null;
