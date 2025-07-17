@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
 
             'security-patch4': {
-                title: '[업데이트 예정]7/19일 신규캐릭터추가',
+                title: '[업데이트 완료]7/19일 신규캐릭터추가',
                 author: '고양이',
                 date: '2025-07-17',
                 content: `
