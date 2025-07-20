@@ -183,6 +183,22 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>감사합니다. </p>
                 `
             },
+
+            'security-patch6': {
+                title: '[번역완료]캐릭터 획득 경로 태그 번역',
+                author: '고양이',
+                date: '2025-07-20',
+                content: `
+                    <p>기존 상세정보창 하단 끝에서 보이는 획득경로 태그를 번역완료하였습니다.</P>
+                    <p>이제 하단에서 캐릭터 획득경로를 볼 수 있습니다.</P>
+
+                    <blockquote>
+                        <p><strong>안내:</strong> 패치 적용으로 인한 서비스 중단은 없었으며, 모든 기능이 정상적으로 작동합니다.</p>
+                    </blockquote>
+
+                    <p>감사합니다. </p>
+                `
+            },
         };
 
         return noticeData[noticeId] || null;

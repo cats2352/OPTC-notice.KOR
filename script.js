@@ -116,8 +116,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const timeDifference = currentDate.getTime() - postDate.getTime();
                 const daysDifference = timeDifference / (1000 * 3600 * 24); // 일 단위로 변환
                 
-                // 5일 이내인 경우 최신글 배지를 추가합니다
-                if (daysDifference <= 5 && daysDifference >= 0) {
+                // 3일 이내인 경우 최신글 배지를 추가합니다
+                if (daysDifference <= 3 && daysDifference >= 0) {
                     const titleCell = row.querySelector('td:nth-child(2)');
                     if (titleCell) {
                         const link = titleCell.querySelector('a');
@@ -242,6 +242,8 @@ document.addEventListener('DOMContentLoaded', function() {
                             noticeId = 'security-patch4';
                         }   else if (title.includes('일부 캐릭터 초월 필살기 미표시 오류수정')) {
                             noticeId = 'security-patch5';
+                        }   else if (title.includes('[번역완료]캐릭터 획득 경로 태그 번역')) {
+                            noticeId = 'security-patch6';
                         }
                         else {
                             // 기본 공지사항 (내용이 없는 경우)
