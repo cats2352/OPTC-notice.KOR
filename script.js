@@ -244,6 +244,8 @@ document.addEventListener('DOMContentLoaded', function() {
                             noticeId = 'security-patch5';
                         }   else if (title.includes('[번역완료]캐릭터 획득 경로 태그 번역')) {
                             noticeId = 'security-patch6';
+                        }  else if (title.includes('[업데이트 완료]메인Ui 교체')) {
+                            noticeId = 'security-patch7';
                         }
                         else {
                             // 기본 공지사항 (내용이 없는 경우)

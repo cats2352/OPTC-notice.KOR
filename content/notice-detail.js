@@ -199,6 +199,22 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>감사합니다. </p>
                 `
             },
+
+            'security-patch7': {
+                title: '[업데이트 완료]메인Ui 교체',
+                author: '고양이',
+                date: '2025-07-23',
+                content: `
+                    <p>기존 메인Ui 창을 새롭게 리디자인했습니다.</P>
+                    <p>이제 하단에서 최근 추가내역을 쉽게 확인할 수 있습니다.</P>
+
+                    <blockquote>
+                        <p><strong>안내:</strong> 패치 적용으로 인한 서비스 중단은 없었으며, 모든 기능이 정상적으로 작동합니다.</p>
+                    </blockquote>
+
+                    <p>감사합니다. </p>
+                `
+            },
         };
 
         return noticeData[noticeId] || null;
