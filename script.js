@@ -246,6 +246,8 @@ document.addEventListener('DOMContentLoaded', function() {
                             noticeId = 'security-patch6';
                         }  else if (title.includes('[업데이트 완료]메인Ui 교체')) {
                             noticeId = 'security-patch7';
+                        }  else if (title.includes('7/26일 갓벨리 페스 캐릭터추가')) {
+                            noticeId = 'security-patch8';
                         }
                         else {
                             // 기본 공지사항 (내용이 없는 경우)

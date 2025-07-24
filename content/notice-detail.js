@@ -215,6 +215,31 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>감사합니다. </p>
                 `
             },
+
+            'security-patch8': {
+                title: '[업데이트 완료]7/26일 갓벨리 페스 캐릭터추가',
+                author: '고양이',
+                date: '2025-07-24',
+                content: `
+                    <p>7월 24일 갓벨리 스고페스 캐릭터가 추가되었습니다.</p>
+                    <P>추가 캐릭터 목록은 아래와 같습니다.</P>
+
+                    <h1>신규 캐릭터 목록</h1>
+                    <ul>
+                        <li>몽키 D. 가프 – 밀고 들어가는 갓 밸리의 땅</li>
+                        <li>피거랜드 갈링 성</li>
+                        <li>엠포리오 이반코프 – 찬스를 노리는 노예</li>
+                        <li>쿠마&지니</li>
+                        <li>샬롯 링링 – 목표를 포착한 여해적</li>
+                    </ul>
+
+                    <blockquote>
+                        <p><strong>안내:</strong> 패치 적용으로 인한 서비스 중단은 없었으며, 모든 기능이 정상적으로 작동합니다.</p>
+                    </blockquote>
+
+                    <p>감사합니다. </p>
+                `
+            },
         };
 
         return noticeData[noticeId] || null;
