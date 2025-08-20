@@ -240,6 +240,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>감사합니다. </p>
                 `
             },
+
+            'security-patch9': {
+                title: '[공지사항]공지사항 시스템 양식변경',
+                author: '고양이',
+                date: '2025-08-21',
+                content: `
+                    <p>앞으로 공지사항 사이트에는 기존 갤러리 사이트에 업데이트 내용을 올리고</p>
+                    <P>이후 링크를 공지사항에 업로드하는 양식으로 변경됩니다.</P>
+                    <blockquote>
+                        <p><strong>안내:</strong> 패치 적용으로 인한 서비스 중단은 없었으며, 모든 기능이 정상적으로 작동합니다.</p>
+                    </blockquote>
+
+                    <p>감사합니다. </p>
+                `
+            },
         };
 
         return noticeData[noticeId] || null;
